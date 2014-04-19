@@ -1,7 +1,102 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.snooze4charity.MainActivity"
-    tools:ignore="MergeRootFrame" />
+    android:scaleType="centerCrop">
+    
+   	<RelativeLayout android:layout_width="match_parent"
+   	    android:layout_height="wrap_content">
+   	    
+   	    <TextView android:id="@+id/alarm_time_background"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="88:88"
+	        android:typeface="monospace"
+	        android:gravity="center_horizontal"
+	        android:textSize="110sp"
+	        android:textColor="#ff333333"/>
+   	    
+	    <TextView android:id="@+id/alarm_time"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text=" 7:01"
+	        android:typeface="monospace"
+	        android:gravity="center_horizontal"
+	        android:textSize="110sp"
+	        android:textColor="@android:color/holo_blue_light" />
+	    
+   	</RelativeLayout>
+
+   	<LinearLayout
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentBottom="true"
+   	    android:orientation="vertical" >
+
+   	    <Switch
+   	        android:id="@+id/alarm_period"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:textOff="PM"
+   	        android:textOn="AM" />
+
+   	    <LinearLayout
+   	        android:layout_width="match_parent"
+   	        android:layout_height="wrap_content"
+   	        android:orientation="horizontal"
+   	        android:gravity="center_horizontal">
+
+   	        <ToggleButton
+   	            android:id="@+id/toggle_monday"
+   	            android:layout_width="50dp"
+   	            android:layout_height="wrap_content"
+   	            android:textOff="M"
+   	            android:textOn="M" />
+
+   	        <ToggleButton
+   	            android:id="@+id/toggle_tuesday"
+   	            android:layout_width="50dp"
+   	            android:layout_height="wrap_content"
+   	            android:textOff="Tu"
+   	            android:textOn="Tu" />
+
+   	        <ToggleButton
+   	            android:id="@+id/toggle_wednesday"
+   	            android:layout_width="50dp"
+   	            android:layout_height="wrap_content"
+   	            android:textOff="W"
+   	            android:textOn="W" />
+   	        
+   	        <ToggleButton
+   	            android:id="@+id/toggle_thursday"
+   	            android:layout_width="50dp"
+   	            android:layout_height="wrap_content"
+   	            android:textOff="Th"
+   	            android:textOn="Th" />
+   	        
+   	        <ToggleButton
+   	            android:id="@+id/toggle_friday"
+   	            android:layout_width="50dp"
+   	            android:layout_height="wrap_content"
+   	            android:textOff="F"
+   	            android:textOn="F" />
+   	        
+   	        <ToggleButton
+   	            android:id="@+id/toggle_saturday"
+   	            android:layout_width="50dp"
+   	            android:layout_height="wrap_content"
+   	            android:textOff="Sa"
+   	            android:textOn="Sa" />
+   	        
+   	        <ToggleButton
+   	            android:id="@+id/toggle_sunday"
+   	            android:layout_width="50dp"
+   	            android:layout_height="wrap_content"
+   	            android:textOff="Su"
+   	            android:textOn="Su" />
+   	        
+   	    </LinearLayout>
+   	
+   	</LinearLayout>
+
+</RelativeLayout>
